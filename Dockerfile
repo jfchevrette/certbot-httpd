@@ -2,7 +2,7 @@ FROM centos:7
 
 RUN sh -x && \
     yum -y install epel-release && \
-    yum -y install certbot httpd && \
+    yum -y install certbot httpd rsync && \
     yum clean all && \
     chmod 777 /run/httpd /var/www/html
 
